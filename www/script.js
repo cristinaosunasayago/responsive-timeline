@@ -25,7 +25,6 @@ const fetchData = async () => {
       const clone = card.cloneNode(true);
       fragment.appendChild(clone);
     });
-    card.shift();
     card.appendChild(fragment);
     
   };
