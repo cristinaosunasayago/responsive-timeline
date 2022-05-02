@@ -1,6 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap');
 
 body {
-  background: linear-gradient(45deg, #209cff, #68e0cf);
+  background: rgb(122,153,131);
+  background: linear-gradient(27deg, rgba(122,153,131,1) 0%, rgba(141,161,125,1) 30%, rgba(153,164,121,1) 72%, rgba(125,157,136,1) 100%); 
+  font-family: Helvetica, sans-serif;
+  font-size: 10px;
+}
+h1{
+  font-family: 'Sigmar One', cursive;
+  color: #f0e0bd;
+  font-size: 8vmin;
+}
+h2{
+  font-family: 'Bungee Hairline', cursive;
+  color: #f0e0bd;
+  font-size: 3vmin ;
+}
+h3{
+  font-family: 'Bungee Hairline', cursive;
+  color: #f0e0bd;
+  font-size: 3vmin ;
+}
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 100vmin;
+  margin: 0 auto;
+}
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 0.2vmin;
+  background-color: white;
+  top: 5vmin;
+  bottom: 0;
+  left: -3%;
 }
 
+.container{
+  border: #f0e0bd solid 0.5vmin;
+  position:center;
+  padding-left: 10vmin;
+}
