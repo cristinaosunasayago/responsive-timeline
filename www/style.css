@@ -3,25 +3,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap');
 
 body {
-  background: rgb(122,153,131);
-  background: linear-gradient(27deg, rgba(122,153,131,1) 0%, rgba(141,161,125,1) 30%, rgba(153,164,121,1) 72%, rgba(125,157,136,1) 100%); 
+  background:black;
   font-family: Helvetica, sans-serif;
   font-size: 10px;
+  width:100%; 
+  min-height:100vh;
+  box-sizing: border-box;
+  margin-right: 10vmin;
+  margin-left: 10vmin;
+  padding-right: 2vmin;
+  padding-left: 2vmin;
 }
 h1{
   font-family: 'Sigmar One', cursive;
-  color: #f0e0bd;
+  color: yellow;
   font-size: 8vmin;
 }
 h2{
   font-family: 'Bungee Hairline', cursive;
-  color: #f0e0bd;
-  font-size: 3vmin ;
+  color:white;
+  font-weight: 500px;
+  font-size: 4vmin ;
 }
 h3{
   font-family: 'Bungee Hairline', cursive;
-  color: #f0e0bd;
+  color: yellow;
   font-size: 3vmin ;
+}
+
+p {
+  font-family: 'Bungee Hairline', cursive;
+  color: white;
+  padding-right: 10vmin;
 }
 /* The actual timeline (the vertical ruler) */
 .timeline {
@@ -34,14 +47,39 @@ h3{
   content: '';
   position: absolute;
   width: 0.2vmin;
-  background-color: white;
+  background-color: yellow;
   top: 5vmin;
   bottom: 0;
-  left: -3%;
+  left: -0.5%;
+  border-radius: 10px;
 }
 
 .container{
-  border: #f0e0bd solid 0.5vmin;
   position:center;
   padding-left: 10vmin;
+}
+
+img {
+  max-width: 100%;
+  transform: translateX(-50px);
+  transform: translateX(0px);
+}
+
+h2{
+  -webkit-transform: translate(0,3vmin);
+  transition: 1s;
+}
+
+img:hover {
+  transform: scale(0.8);
+  transition: 0.2s;
+}
+
+footer{
+  background-color: yellow;
+  height: 5vmin;
+  color: black;
+  text-align: center;
+  padding: 1vmin;
+  font-family: 'Bungee Hairline', cursive;
 }
